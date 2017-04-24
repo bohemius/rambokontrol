@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>HTTP-RPC Server Example</title>
+        <script src="mbedRPC.js" type="text/javascript" language="javascript"></script>
+        <script type="text/javascript">
+            mbed = new HTTPRPC();
+            var x = 0;
+            RPCRequest = new RPCVariable(mbed, "Request"); 
+ 
+            function send_request() 
+            {
+                if(x == 1) { 
+                    console.log("Led ON, turning OFF");
+                    x = 0;
+                }
+                else if (x == 0) { 
+                    console.log("Led OFF, turning ON");
+                    x = 1; 
+                } else {
+                    console.log("Status unknown, turning OFF");
+                    x = 0;
+                }
+                RPCRequest.write(x);
+            }
+        </script>
+    </head>
+    <body>
+        <p>If you click the below button, the LED3 should switch</p>
+        <button onClick="send_request()">LED3</button>       
+    </body>
+</html>
