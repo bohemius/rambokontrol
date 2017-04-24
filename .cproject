@@ -61,13 +61,13 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/}&quot;"/>
 									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include"/>
-									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.2.1"/>
-									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.2.1/arm-none-eabi"/>
-									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.2.1/backward"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/usr/lib/gcc/arm-none-eabi/6.2.1/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/usr/lib/gcc/arm-none-eabi/6.2.1/include-fixed}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/http_rpc/MbedJSONValue}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed-rpc-functions}&quot;"/>
+									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.3.1"/>
+									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.3.1/backward"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/usr/lib/gcc/arm-none-eabi/6.3.1/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/usr/lib/gcc/arm-none-eabi/6.3.1/include-fixed}&quot;"/>
 								</option>
 								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.1670933615" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__CMSIS_RTOS"/>
@@ -119,12 +119,12 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/TARGET_LPC1768/TARGET_NXP/TARGET_LPC176X/TARGET_MBED_LPC1768}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/}&quot;"/>
-									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.2.1/backward"/>
-									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.2.1/arm-none-eabi"/>
-									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.2.1"/>
 									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include"/>
-									<listOptionValue builtIn="false" value="/usr/lib/gcc/arm-none-eabi/6.2.1/include"/>
-									<listOptionValue builtIn="false" value="/usr/lib/gcc/arm-none-eabi/6.2.1/include-fixed"/>
+									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.3.1/backward"/>
+									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.3.1"/>
+									<listOptionValue builtIn="false" value="/usr/lib/gcc/arm-none-eabi/6.3.1/include"/>
+									<listOptionValue builtIn="false" value="/usr/lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
 								</option>
 								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.496389156" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEVICE_ERROR_PATTERN=1"/>
@@ -214,13 +214,13 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/}&quot;"/>
 									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include"/>
-									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.2.1"/>
-									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.2.1/arm-none-eabi"/>
-									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.2.1/backward"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/usr/lib/gcc/arm-none-eabi/6.2.1/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/usr/lib/gcc/arm-none-eabi/6.2.1/include-fixed}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/http_rpc/MbedJSONValue}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed-rpc-functions}&quot;"/>
+									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.3.1"/>
+									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+									<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.3.1/backward"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/usr/lib/gcc/arm-none-eabi/6.3.1/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/usr/lib/gcc/arm-none-eabi/6.3.1/include-fixed}&quot;"/>
 								</option>
 								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.1395532696" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEVICE_ERROR_PATTERN=1"/>
