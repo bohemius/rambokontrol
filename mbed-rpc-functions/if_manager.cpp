@@ -1,7 +1,7 @@
 #include "if_manager.h"
 #include "hl_debug.h"
 
-InterfaceManager::InterfaceManager() : _printer(Serial(p28,p27)) {
+InterfaceManager::InterfaceManager() {
 	INFO("Initializing Ethernet adapter");
 	_eth.init();
 	_eth.connect();
@@ -19,10 +19,6 @@ InterfaceManager::~InterfaceManager() {
 
 EthernetInterface InterfaceManager::getEthIf() {
 	return _eth;
-}
-
-Serial InterfaceManager::getPrinterIf() {
-	return _printer;
 }
 
 void InterfaceManager::addDigitalOut(const PinName pin) {

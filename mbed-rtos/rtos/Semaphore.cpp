@@ -19,10 +19,9 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include "Semaphore.h"
+#include "rtos/Semaphore.h"
 
 #include <string.h>
-#include "error.h"
 
 namespace rtos {
 

@@ -271,6 +271,57 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="0.936619452.310302432" name="lwipopts.h" rcbsApplicability="disable" resourcePath="EthernetInterface/lwip/lwipopts.h" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.162714252.220370374">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.162714252.220370374" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder.162714252">
+							<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1030364769" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/http_rpc/}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/HTTPServer}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/HTTPServer/Handler}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MbedJSONValue}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed-rpc}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed-rpc-functions}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/Socket}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip-eth}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip-eth/arch}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip-eth/arch/TARGET_NXP}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip-sys}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip-sys/arch}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip/api}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip/core}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip/core/ipv4}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip/core/snmp}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip/include}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip/include/ipv4}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip/include/ipv4/lwip}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip/include/lwip}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip/include/netif}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip/netif}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/EthernetInterface/lwip/netif/ppp}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed-rtos}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed-rtos/rtos}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed-rtos/rtx}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed-rtos/rtx/TARGET_CORTEX_M}&quot;"/>
+								<listOptionValue builtIn="false" value="/mbed-rtos/rtx/TARGET_CORTEX_M/TARGET_M3/TOOLCHAIN_GCC"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed-rtos/targets/TARGET_NXP/}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/.}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/TARGET_LPC1768}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/TARGET_LPC1768/TARGET_NXP}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/TARGET_LPC1768/TARGET_NXP/TARGET_LPC176X}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/TARGET_LPC1768/TARGET_NXP/TARGET_LPC176X/TARGET_MBED_LPC1768}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM}&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;${workspace_loc:/}&quot;"/>
+								<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include"/>
+								<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.3.1/backward"/>
+								<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+								<listOptionValue builtIn="false" value="/usr/arm-none-eabi/include/c++/6.3.1"/>
+								<listOptionValue builtIn="false" value="/usr/lib/gcc/arm-none-eabi/6.3.1/include"/>
+								<listOptionValue builtIn="false" value="/usr/lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+							</option>
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.204062299" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
 				</configuration>
 			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>

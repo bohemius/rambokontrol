@@ -19,7 +19,7 @@ HTTPServer svr;
 //  Instantiate a local file system handler named 'local' which will be used later to access files on the mbed.
 LocalFileSystem local("local");
 //  Instantiate a sd file system handler named 'sd' which will be used later to access files on the SD card.
-SDFileSystem sd(p11, p12, p13, p21, "sd");
+SDFileSystem sd(p11, p12, p13, p21, "sd", p15, SDFileSystem::SWITCH_NEG_NO, 80000000);
 //  Create the EthernetInterface. This is optional, please see the documentation of HTTP Server's start method.
 
 //EthernetInterface eth;
@@ -34,18 +34,17 @@ RPCFunction rpcSdRoot(&fSdRoot, "sdRoot");
 
 vector<string> read_file_names(char *dir) {
 	vector<string> result;
-	DIR* dp;
-	struct dirent *dirp;
-	dp = opendir(dir);
-	if (dp != NULL) {
+	DirHandle *dirHandle = sd.opendir(dir);;
+	struct dirent *dirEntry;
+	if (dirHandle != NULL) {
 		//read all directory and file names in current directory into filename vector
-		while ((dirp = readdir(dp)) != NULL) {
-			result.push_back(string(dirp->d_name));
+		while ((dirEntry = dirHandle->readdir()) != NULL) {
+			result.push_back(string(dirEntry->d_name));
 		}
 	} else {
 		ERR("Error opening directory %s", dir);
 	}
-	closedir(dp);
+	dirHandle->closedir();
 	return result;
 }
 
@@ -53,6 +52,16 @@ void dump_file_list(vector<string> fileList) {
 	for (vector<string>::iterator it = fileList.begin(); it < fileList.end();
 			it++) {
 		INFO("%s", (*it).c_str());
+	}
+}
+
+void try_index_file() {
+	DIR *fp = opendir(".");
+	if (fp == NULL) {
+		ERR("Error trying index file.");
+	} else {
+		INFO("index.html file OK");
+		closedir(fp);
 	}
 }
 
@@ -67,15 +76,41 @@ int main() {
 	setRpcInterfaceMgr(&ifMgr);
 
 	INFO("Server starting.");
-	INFO("Mounting embedded flash as /local/");
-	vector<string> localFilesList = read_file_names("/local");
+	//INFO("Mounting embedded flash as /local/");
+	//vector<string> localFilesList = read_file_names("/local");
 
 	INFO("Mounting SD Card as /sd/");
-	vector<string> sdFilesList = read_file_names("/sd");
+	//Try to mount the SD card
+	if (sd.mount() != 0) {
+	    ERR("failed!");
+	    exit(1);
+	}
+	INFO("success!");
+
+	//Display the card type
+	INFO("\tCard type: ");
+	SDFileSystem::CardType cardType = sd.card_type();
+	if (cardType == SDFileSystem::CARD_NONE) {
+		INFO("None");
+	} else if (cardType == SDFileSystem::CARD_MMC) {
+	    INFO("MMC");
+	} else if (cardType == SDFileSystem::CARD_SD) {
+	    INFO("SD");
+	} else if (cardType == SDFileSystem::CARD_SDHC) {
+	    INFO("SDHC");
+	} else {
+	   INFO("Unknown");
+	}
+
+	//Display the card capacity
+	INFO("\tSectors: %u", sd.disk_sectors());
+	INFO("\tCapacity: %.1fMB", sd.disk_sectors() / 2048.0);
+	vector<string> sdFilesList = read_file_names("/");
 
 	dump_file_list(sdFilesList);
+	try_index_file();
 
-	HTTPFsRequestHandler::mount("/sd/webfs/", "/");
+	HTTPFsRequestHandler::mount("webfs/", "/");
 	svr.addHandler<HTTPFsRequestHandler>("/");
 	svr.addHandler<HTTPRpcRequestHandler>("/rpc");
 

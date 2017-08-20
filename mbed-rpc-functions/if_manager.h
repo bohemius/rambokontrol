@@ -11,12 +11,10 @@ public:
 	~InterfaceManager();
 
 	EthernetInterface getEthIf();
-	Serial getPrinterIf();
 	void addDigitalOut(const PinName pin);
 
 private:
 	EthernetInterface _eth;
-	Serial _printer; // tx, rx serial interface for printer
 	map<PinName,DigitalOut> _digitalOutputs;
 
 };
