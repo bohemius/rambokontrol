@@ -1,0 +1,32 @@
+---------NYFS-----------
+[INFO: /src/main.cpp:67]Creating random data..
+[INFO: /src/main.cpp:14]Testing 4B write performance...
+[INFO: /src/main.cpp:31]done!
+                             	Result: 0.07 MB/s
+[INFO: /src/main.cpp:42]Testing 4B read performance...
+[INFO: /src/main.cpp:57]done!
+                             	Result: 0.08 MB/s
+[INFO: /src/main.cpp:78]Exiting
+
+---------SDFS-----------
+[INFO: ../main.cpp:88]Setting CRC
+[INFO: ../main.cpp:90]Setting large frames
+[INFO: ../main.cpp:92]Setting write validation
+[INFO: ../main.cpp:109]Mounting SD card...
+[INFO: ../main.cpp:114]success!
+[INFO: ../main.cpp:117]	Card type: 
+[INFO: ../main.cpp:126]SDHC
+[INFO: ../main.cpp:132]	Sectors: 15482880
+[INFO: ../main.cpp:133]	Capacity: 7560.0MB
+[INFO: ../main.cpp:70]Reading webfs directory
+[INFO: ../main.cpp:77]index.html 
+[INFO: ../main.cpp:77]mbedrpc.js 
+[INFO: ../main.cpp:77]vue.min.js 
+[INFO: ../main.cpp:18]Testing 4096B write performance...
+[INFO: ../main.cpp:34]done!
+                           	Result: 0.14 MB/s
+[INFO: ../main.cpp:45]Testing 4096B read performance...
+[INFO: ../main.cpp:60]done!
+                           	Result: 0.40 MB/s
+[INFO: ../main.cpp:160]Exiting
+

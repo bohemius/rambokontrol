@@ -81,7 +81,7 @@ int HTTPFsRequestHandler::handleGetRequest()
     FILE *fp = fopen(reqPath.c_str(), "r");
     if (fp != NULL) {
         char * pBuffer = NULL;
-        int sz = 8192;
+        int sz = 16384;
         while( pBuffer == NULL) {
             sz /= 2;
             pBuffer = (char*)malloc(sz);
